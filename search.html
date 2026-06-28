@@ -3,6 +3,7 @@
  <head>
   <meta charset="utf-8"/>
   <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta content="Search all city guides, attractions, transport and trip information." name="description"/>
   <meta content="#2563eb" name="theme-color"/>
   <link href="./manifest.json" rel="manifest"/>
   <link href="./css/style.css" rel="stylesheet"/>
@@ -15,22 +16,34 @@
    <div class="nav-container">
     <a class="logo" href="./">
      <span class="logo-emoji">
-      ✈️
+      🧭
      </span>
      <span>
-      Euro Trip
+      Euro Trip 2026
      </span>
     </a>
     <nav class="nav-center">
      <a href="./">
       Home
      </a>
+     <a href="./paris/">
+      Paris
+     </a>
+     <a href="./amsterdam/">
+      Amsterdam
+     </a>
+     <a href="./berlin/">
+      Berlin
+     </a>
+     <a href="./prague/">
+      Prague
+     </a>
     </nav>
     <div class="nav-right">
-     <button class="nav-icon-btn" id="theme-toggle">
+     <button class="nav-icon-btn" id="theme-toggle" type="button">
       🌙
      </button>
-     <button class="hamburger">
+     <button aria-label="Toggle menu" class="hamburger" type="button">
       <span>
       </span>
       <span>
@@ -44,6 +57,27 @@
     <nav>
      <a href="./">
       Home
+     </a>
+     <a href="./paris/">
+      Paris
+     </a>
+     <a href="./amsterdam/">
+      Amsterdam
+     </a>
+     <a href="./berlin/">
+      Berlin
+     </a>
+     <a href="./prague/">
+      Prague
+     </a>
+     <a href="./bookings/">
+      Bookings
+     </a>
+     <a href="./money/">
+      Money
+     </a>
+     <a href="./safety/">
+      Safety
      </a>
     </nav>
    </div>
@@ -63,73 +97,60 @@
    <h1>
     🔍 Search
    </h1>
-   <p class="text-secondary">
-    Find information about your trip
+   <p class="text-secondary text-lg">
+    Find landmarks, museums, neighbourhoods, local transport and trip information.
    </p>
-   <div style="background: var(--color-surface); padding: var(--spacing-lg); border-radius: var(--radius-xl); margin-bottom: var(--spacing-xl);">
-    <input id="search-input" placeholder="Search pages..." style="width: 100%; padding: var(--spacing-md); border: 1px solid var(--color-border); border-radius: var(--radius-lg); font-size: 1rem;" type="text"/>
+   <div class="search-input-wrapper">
+    <input aria-label="Search city guides" id="search-input" placeholder="Try Louvre, canals, Charles Bridge or metro..." type="search"/>
    </div>
-   <div id="search-results" style="min-height: var(--spacing-xl);">
+   <div aria-live="polite" id="search-results">
     <p class="text-secondary">
      Search city sights, neighbourhoods, local transport or Prague Airport.
     </p>
    </div>
-   <section style="background: var(--color-surface); padding: var(--spacing-lg); border-radius: var(--radius-xl); margin-top: var(--spacing-xl);">
-    <h2 style="margin-top: 0;">
-     Popular Topics
+   <section class="search-topics">
+    <h2>
+     Popular topics
     </h2>
-    <ul style="list-style: none; padding: 0;">
-     <li>
-      <a href="./paris/">
-       Paris
-      </a>
-     </li>
-     <li>
-      <a href="./amsterdam/">
-       Amsterdam
-      </a>
-     </li>
-     <li>
-      <a href="./berlin/">
-       Berlin
-      </a>
-     </li>
-     <li>
-      <a href="./prague/">
-       Prague
-      </a>
-     </li>
-        <li>
-         <a href="./prague/airport.html">
-          Prague Airport
-         </a>
-        </li>
-        <li>
-         <a href="./bookings/">
-          Bookings
-         </a>
-        </li>
-        <li>
-         <a href="./money/">
-          Money
-         </a>
-        </li>
-        <li>
-         <a href="./safety/">
-          Safety
-         </a>
-        </li>
-        <li>
-         <a href="./emergency/">
-          Emergency
-         </a>
-        </li>
-    </ul>
+    <div class="grid grid-4">
+     <a class="card card-link" href="./paris/">
+      <div class="card-icon">🇫🇷</div>
+      <h3 class="card-title">Paris</h3>
+     </a>
+     <a class="card card-link" href="./amsterdam/">
+      <div class="card-icon">🇳🇱</div>
+      <h3 class="card-title">Amsterdam</h3>
+     </a>
+     <a class="card card-link" href="./berlin/">
+      <div class="card-icon">🇩🇪</div>
+      <h3 class="card-title">Berlin</h3>
+     </a>
+     <a class="card card-link" href="./prague/">
+      <div class="card-icon">🇨🇿</div>
+      <h3 class="card-title">Prague</h3>
+     </a>
+     <a class="card card-link" href="./prague/airport.html">
+      <div class="card-icon">✈️</div>
+      <h3 class="card-title">Prague Airport</h3>
+     </a>
+     <a class="card card-link" href="./bookings/">
+      <div class="card-icon">🎫</div>
+      <h3 class="card-title">Bookings</h3>
+     </a>
+     <a class="card card-link" href="./money/">
+      <div class="card-icon">💳</div>
+      <h3 class="card-title">Money</h3>
+     </a>
+     <a class="card card-link" href="./safety/">
+      <div class="card-icon">🛡️</div>
+      <h3 class="card-title">Safety</h3>
+     </a>
+    </div>
    </section>
   </main>
-  <footer style="background: var(--color-surface); border-top: 1px solid var(--color-border); padding: var(--spacing-lg); margin-top: var(--spacing-2xl); text-align: center; color: var(--color-text-secondary);">
+  <footer>
    <p>
-    © 2026 European Trip
+    European Trip 2026
    </p>
   </footer>
   <script src="./js/main.js">

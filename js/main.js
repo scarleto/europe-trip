@@ -198,7 +198,7 @@ function displaySearchResults(results) {
   if (!searchResults) return;
   
   if (results.length === 0) {
-    searchResults.innerHTML = '<div style="padding: 1rem; color: var(--color-text-secondary);">No results found</div>';
+    searchResults.innerHTML = '<div class="search-no-results">No results found</div>';
     return;
   }
   

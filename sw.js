@@ -8,6 +8,7 @@ const ASSETS = [
   'paris/index.html', 'paris/navigo.html', 'paris/metro.html', 'paris/metro-etiquette.html',
   'paris/seine-cruise.html', 'paris/dior.html', 'paris/eiffel.html', 'paris/arc.html',
   'paris/notre-dame.html', 'paris/louvre.html', 'paris/montmartre.html',
+  'maps/Plan-Metro.1772790495.pdf',
   'amsterdam/index.html', 'amsterdam/transport.html', 'amsterdam/anne-frank.html',
   'amsterdam/dam-square.html', 'amsterdam/canals.html', 'amsterdam/jordaan.html',
   'amsterdam/rijksmuseum.html', 'amsterdam/sightseeing.html',
