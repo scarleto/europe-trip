@@ -1,0 +1,23 @@
+{
+  "name": "European Trip 2026",
+  "short_name": "Euro Trip 2026",
+  "description": "Offline city guides and essential family trip information for Paris, Amsterdam, Berlin and Prague.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "background_color": "#f7f4ed",
+  "theme_color": "#2563eb",
+  "icons": [
+    { "src": "./images/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "./images/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ],
+  "categories": ["travel", "reference"],
+  "shortcuts": [
+    { "name": "Paris", "url": "./paris/" },
+    { "name": "Amsterdam", "url": "./amsterdam/" },
+    { "name": "Berlin", "url": "./berlin/" },
+    { "name": "Prague", "url": "./prague/" },
+    { "name": "Bookings", "url": "./bookings/" }
+  ]
+}
